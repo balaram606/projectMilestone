@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+  <!-- css link -->
+  <link rel="stylesheet" href="./css/balu.css">
+
+</head>
+
+<body>
+  <!-- header section start -->
+  <header class="header">
+    <div class="navbar navbar-dark navbar-expand-lg">
+      <div class="container-fluid ">
+        <a href="#"><img src="./img/logo-balu-removebg-preview.png" width="100" height="60" class="navbar-brand" /></a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse justify-content-end" id="menu">
+          <ul class="navbar-nav main-menu">
+            <li class="nav-item"><a class="nav-link">Experience 1440</a></li>
+            <li class="nav-item"><a class="nav-link">Our Purpose</a></li>
+            <li class="nav-item"><a class="nav-link">Online Learning</a></li>
+            <li class="nav-item"><a class="nav-link">About 1440</a></li>
+            <li class="nav-item"><a class="nav-link">Stories</a></li>
+           <div class="Bookingh">
+            <form>
+              <button class="btn btn-danger book-now">Booking Now</button>
+            </form>
+           </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div>
+  </header>
+
+  <!-- header section End -->
+
+  <!-- hero section start -->
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+
+        <video id="myVideo">
+          <source src="./img/production ID_4193140.mp4" type="video/mp4">
+        </video>
+
+        <div class="video-pause">
+          <button type="button" id="butn" class="btn" data-bs-target="#demo" onclick="PlayPause()">
+            <span class="bi bi-play-circle text-white"></span>
+          </button>
+        </div>
+
+        <div id="quot" data-bs-target="#demo">
+          <h1><i>Inspiring Headline <br> Goes Here</i></h1>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="./img/pexels-aleksandar-pasaric-325185.jpg" alt="Building">
+      </div>
+      <div class="carousel-item ">
+        <img src="./img/pexels-marcus-herzberg-1058278.jpg" alt="Building">
+    
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- hero section End -->
+
+
+  <!-- paragraph section satrt -->
+
+  <section>
+    <h1>Add Your Powerful and Inspring H1 Here</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eos, inventore,
+      dolor repellat explicabo enim fuga est ducimus nisi eius doloremque? Mollitia tempore natus, esse aut adipisci
+      accusamus. Quas, sint.
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, tempora recusandae quibusdam sint error
+      suscipit tenetur aut a sit
+      ducimus minima fugit, dignissimos blanditiis nihil iure modi? Voluptate, doloribus atque?
+    </p>
+  </section>
+
+  <!-- paragraph section End -->
+
+  <!-- image collapse section start -->
+
+  <div>
+    <p id="plus">
+      <a class="bi bi-plus-circle" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse"
+        aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2"></a>
+    </p>
+    <div class="row p-4">
+      <div class="col-md-6 col-sm-12 col-12">
+        <div class="collapse multi-collapse" id="multiCollapseExample1">
+          <div class="card ">
+            <img src="./img/pexels-aleksandar-pasaric-325185.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12 col-12">
+        <div class="collapse multi-collapse" id="multiCollapseExample2">
+          <div class="card ">
+            <img src="./img/pexels-marcus-herzberg-1058278.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- image collapse section End -->
+
+
+
+  <!-- footer section start -->
+  <footer>
+    <div class="row foot">
+      <div class="col-md-3 col-sm-3 col-12 foot-1">
+        <img src="./img/Heart-img.png" width="30" height="30">
+        <h3><a href="#">Make a Donation</a></h3>
+      </div>
+      <div class="col-md-9 col-sm-9 col-12 foot-2 ">
+        <ul class="foot-ul">
+          <li><a href="#">FAQS</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Image Gallery</a></li>
+          <li><a href="#">Public Health & Safety</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">1440.tv</a></li>
+          <li><a href="#">1440 Foundation</a></li>
+          <li><a href="#">Carrer</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- footer section End -->
+
+
+  <script src="jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
+  <script src="./js/bulu.js"></script>
+</body>
+
+</html>
